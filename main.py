@@ -12,6 +12,8 @@ ASSISTANT_ID = "asst_WAuvdaU7XJ5cUdh0J2U6oeOh"
 if not OPENAI_API_KEY:
     raise ValueError("La clé API OpenAI n'est pas définie dans les variables d'environnement.")
 
+print(f"✅ Clé API chargée avec succès : {openai_key[:5]}*****")
+
 # Initialisation du client OpenAI
 client = OpenAI(api_key=OPENAI_API_KEY)
 
